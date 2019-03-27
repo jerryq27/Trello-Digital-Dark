@@ -1,26 +1,17 @@
 /*----------------------------------------------------------------------
-Digital Dark Style by Michael Fabian 'Xaymar' Dirks <info@xaymar.com>.
+Material Dark Trello by Charlie Etienne
 ----------------------------------------------------------------------*/
 
-/* The Theme now has a public GitHub repository!
-	Check it out: https://github.com/Xaymar/Trello-Digital-Dark */
-
-/*
-  Lightness increases by 5% each Layer. Text is always hsl(0,0%,95%).
-  Highlights are done using colors (if the website uses them).
-  
-  Lightness List:
-    0	5%	Background
-	1	10%	1st Layer
-	2	15%	2nd Layer
-	...
+/* CSS based on Digital Dark Style 
+	by Michael Fabian 'Xaymar' Dirks <info@xaymar.com>.
+	https://github.com/Xaymar/Trello-Digital-Dark 
 */
 
-/** {
-	background-color: transparent !important;
-	color: inherit !important;
-	border-color: inherit !important;
-}*/
+/* Colors based on VSCode Material Theme 
+	by Mattia Astorino
+	https://github.com/equinusocio/vsc-material-theme
+*/
+
 
 /* -- Layer 0 -- */
 Layer-0,
@@ -28,9 +19,9 @@ Layer-0,
 div.tabbed-pane-header,
 div.tabbed-pane-nav,
 div#classic-body {
-    background: hsl(0, 0%, 5%) !important;
-    color: hsl(0, 0%, 50%) !important;
-    border-color: hsl(0, 0%, 0%) !important;
+    background-color: hsl(200, 19%, 18%) !important;
+    color: hsl(200, 19%, 50%) !important;
+    border-color: hsl(200, 19%, 26%) !important;
 }
 
 /* -- Layer 1 -- */
@@ -55,15 +46,14 @@ form.js-profile-form input, form.js-profile-form textarea,
 /* Board Menu > Board Navigation Buttons */ div.board-menu a.board-menu-navigation-item-link,
 /* Board Menu > Power-Ups > Counter */ div.board-menu a.board-menu-navigation-item-link span.js-enabled-power-up-count,
 /* Board Menu > Activity */ div.board-menu a.js-open-activity,
-/* Board Page > Tile */ .board-tile,
 /* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > a,
 /* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > button,
 /* Home > Buttons */ div[class^="app-scripts-views-home-presentational-highlight"],
 /* Home > Starred/Viewed/Links  */ .home-board-section-item:hover
 {
-    background: hsl(0, 0%, 10%) !important;
-    color: hsl(0, 0%, 60%) !important;
-    border-color: hsl(0, 0%, 5%) !important;
+    background-color: hsl(200, 19%, 21%) !important;
+    color: hsl(200, 19%, 60%) !important;
+    border-color: hsl(200, 19%, 18%) !important;
 }
 
 /* -- Layer 2 -- */
@@ -104,6 +94,7 @@ form.js-profile-form input:hover, form.js-profile-form textarea:hover,
 /* Board Menu > Power-Ups > Counter */ div.board-menu a.board-menu-navigation-item-link:hover span.js-enabled-power-up-count,
 /* Board Menu > Activity */ div.board-menu a.js-open-activity:hover,
 /* Board Menu > Activity Entry */ div.board-menu div.js-menu-action-list div.phenom,
+/* Board Page > Tile */ .board-tile,
 /* Window - Title */ .window .window-title textarea,
 /* Window - Description */ .window .description-content,
 /* Board Page > Tile */ .board-tile:hover,
@@ -113,16 +104,18 @@ form.js-profile-form input:hover, form.js-profile-form textarea:hover,
 /* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > button:active,
 /* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li > div,
 /* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-card a.canonical-stretch,
-/* Home > Highlights > Comment */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div
+/* Home > Highlights > Comment */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div,
+/* Home > Featured */ .hilzed, 
+/* Home > Featured */ .jFknIO
 {
-    background: hsl(0, 0%, 15%) !important;
-    color: hsl(0, 0%, 70%) !important;
-    border-color: hsl(0, 0%, 10%) !important;
+    background-color: hsl(200, 19%, 26%) !important;
+    color: hsl(200, 19%, 70%) !important;
+    border-color: hsl(200, 19%, 21%) !important;
 }
 
 /* List Card */ .list .list-card,
 /* Highlight Area - Entries */ .member-boards-view .canonical-card a.canonical-stretch {
-    box-shadow: 0 1px 0 #111 !important;
+    box-shadow: 0 1px 0 rgba(38, 50, 56, 0.5) !important;
 }
 
 /* -- Layer 3 -- */
@@ -172,9 +165,9 @@ div.tabbed-pane-main-col a.big-link:hover,
 /* Home > Highlights > Comment > Overflow */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-overflow-button,
 /* Home > Highlights > Comment > Reply */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-comment-icon-button
 {
-    background: hsl(0, 0%, 20%) !important;
-    color: hsl(0, 0%, 80%) !important;
-    border-color: hsl(0, 0%, 15%) !important;
+    background-color: hsl(200, 19%, 30%) !important;
+    color: hsl(200, 19%, 80%) !important;
+    border-color: hsl(200, 19%, 30%) !important;
 }
 
 /* -- Layer 4 -- */
@@ -204,9 +197,9 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 /* Home > Highlights > Comment > Overflow */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-overflow-button:hover,
 /* Home > Highlights > Comment > Reply*/ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-comment-icon-button:hover
 {
-    background: hsl(0, 0%, 25%) !important;
-    color: hsl(0, 0%, 90%) !important;
-    border-color: hsl(0, 0%, 15%) !important;
+    background-color: hsl(200, 19%, 36%) !important;
+    color: hsl(200, 19%, 90%) !important;
+    border-color: hsl(200, 19%, 30%) !important;
 }
 
 /* -- Layer 5 -- */
@@ -215,15 +208,19 @@ Layer-5,
 /* Card - Comment - Card Link */ .phenom .comment-container a.known-service-link:hover,
 /* Card - Description - Card Link */ .window .card-detail-item a.known-service-link:hover
 {
-    background: hsl(0, 0%, 30%) !important;
-    color: hsl(0, 0%, 90%) !important;
-    border-color: hsl(0, 0%, 20%) !important;
+    background-color: hsl(200, 19%, 30%) !important;
+    color: hsl(200, 19%, 90%) !important;
+    border-color: hsl(200, 19%, 26%) !important;
 }
 
 /* -- Unlayered Elements -- */
 a /* Links */,
 .header-search-icon {
-    color: hsl(0, 0%, 75%) !important;
+    color: hsl(200, 19%, 75%) !important;
+}
+.sidebar-section-header-title.mod-clickable:hover,
+.open-card-composer:hover .icon-add {
+    color: #ccd8df;
 }
 
 a:hover /* Links */,
@@ -232,24 +229,27 @@ a:hover /* Links */,
 .card-composer .list-card-composer-textarea,
 .window .card-detail-edit .field,
 .window .comment-box .comment-box-input {
-    color: hsl(0, 0%, 95%) !important;
+    color: hsl(200, 19%, 95%) !important;
 }
 
+.compact-board-tile-link-text-sub-name {
+    color: rgba(255,255,255,.4);
+}
 .button-link {
-	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5) !important
+	box-shadow: 0 1px 0 0 rgba(38, 50, 56, 0.5) !important
 }
 
 .compact-board-tile-fade {
-    background: rgba(0, 0, 0, .88) !important;
+    background-color: rgba(38, 50, 56, .88) !important;
 }
 
 div.tabbed-pane-nav {
-    border-color: hsl(0, 0%, 5%) !important;
+    border-color: hsl(200, 19%, 18%) !important;
 }
 
 div.tabbed-pane-main-col *,
 div.mod-notifications .phenom {
-    border-color: hsl(0, 0%, 25%) !important;
+    border-color: hsl(200, 19%, 30%) !important;
 }
 
 div.tabbed-pane-main-col input.js-add-email,
@@ -266,11 +266,11 @@ form.js-profile-form input.js-cancel-edit-profile,
 }
 
 .window .comment-box .comment-box-input:focus {
-    background: transparent !important;
+    background-color: transparent !important;
 }
 
 /* Horizontal Bars */ hr {
-	background: hsl(0, 0%, 5%) !important;
+	background-color: hsl(200, 19%, 18%) !important;
 }
 
 /* Phenom Entry */ div.phenom {
@@ -289,7 +289,7 @@ form.js-profile-form input.js-cancel-edit-profile,
 /* List Card Details (Sticker) */ .list-card.is-stickered .list-card-details,
 /* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-details,
 /* Card Attachment */ .attachment-thumbnail.ui-sortable-helper, .attachment-thumbnail:hover .attachment-thumbnail-details {
-	background: none;
+	background-color: none;
 }
 
 /* List > Header > Text */ .list .list-header .list-header-name:not(.is-editing) {
@@ -297,69 +297,79 @@ form.js-profile-form input.js-cancel-edit-profile,
 }
 
 /* Card (Popover) - Expand Description */ .window .card-detail-window .card-detail-item .description-content-fade-button {
-	background: linear-gradient(180deg,
-		hsla(0, 0%, 15%, 0),
-		hsla(0, 0%, 15%, 0) 370px,
-		hsla(0, 0%, 15%, 1) 400px
+	background-color: linear-gradient(180deg,
+		hsla(200, 19%, 15%, 0),
+		hsla(200, 19%, 15%, 0) 370px,
+		hsla(200, 19%, 15%, 1) 400px
 	);
 }
 .window .card-detail-window .card-detail-item .description-content-fade-button .description-content-fade-button-text {
-	background: transparent !important;
-    color: hsl(0, 0%, 70%) !important;
+	background-color: transparent !important;
+    color: hsl(200, 19%, 70%) !important;
 }
 .window .card-detail-window .card-detail-item .description-content-fade-button .description-content-fade-button-text:hover {
-	background: transparent !important;
-    color: hsl(0, 0%, 80%) !important;
+	background-color: transparent !important;
+    color: hsl(200, 19%, 80%) !important;
 }
 
 /* Card - Quote */ .window .card-detail-item blockquote {
-	border-left: 5px rgba(0,0,0,0.5) solid !important;
+	border-left: 5px rgba(38,50,56,0.5) solid !important;
 }
 
 .window .comment-container .action-comment {
 	box-shadow: none !important;
+}
+.tile__titleText__2TZbr,
+.tile__link__3kNHQ:active .tile__linkText__BCNab, 
+.tile__link__3kNHQ:hover .tile__linkText__BCNab,
+.tab__quiet__ed4jD:active, 
+.tab__quiet__ed4jD:hover{
+    color: hsl(200, 19%, 70%)
+}
+.tab__quiet__ed4jD {
+    color: hsla(200, 19%, 70%, 0.66);
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
    Card Labels
    ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
 .card-label-red {
-	background-color: hsl(0, 100%, 20%) !important;
+	background-color: hsl(0, 45%, 55%) !important;
 }
 .card-label-orange {
-	background-color: hsl(30, 100%, 20%) !important;
+	background-color: hsl(30, 45%, 55%) !important;
 }
 .card-label-yellow {
-	background-color: hsl(60, 100%, 20%) !important;
+	background-color: hsl(60, 45%, 55%) !important;
 }
 .card-label-lime {
-	background-color: hsl(90, 100%, 20%) !important;
+	background-color: hsl(90, 45%, 55%) !important;
 }
 .card-label-green {
-	background-color: hsl(120, 100%, 20%) !important;
+	background-color: hsl(120, 45%, 55%) !important;
 }
 .card-label-sky {
-	background-color: hsl(180, 100%, 20%) !important;
+	background-color: hsl(180, 45%, 55%) !important;
 }
 .card-label-blue {
 	/* Deep Blue has poor visibility in browsers, especially next to grays. */
 	/*background-color: hsl(240, 100%, 20%) !important;*/
-	background-color: hsl(220, 100%, 30%) !important;
+	background-color: hsl(220, 45%, 55%) !important;
 }
 .card-label-purple {
-	background-color: hsl(270, 100%, 20%) !important;
+	background-color: hsl(270, 45%, 55%) !important;
 }
 .card-label-purple {
-	background-color: hsl(300, 100%, 20%) !important;
+	background-color: hsl(270, 45%, 55%) !important;
 }
 .card-label-pink {
-	background-color: hsl(330, 100%, 20%) !important;
+	background-color: hsl(330, 45%, 55%) !important;
 }
 .card-label-black {
-	background-color: hsl(0, 0%, 0%) !important;
+	background-color: hsl(200, 19%, 26%) !important;
 }
 .card-label-null {
-	background-color: hsl(0, 0%, 30%) !important;
+	background-color: hsl(200, 19%, 30%) !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
@@ -437,14 +447,14 @@ form.js-profile-form input.js-cancel-edit-profile,
 }
 
 /* Home > Starred/Viewed/Links  */ .home-board-link span > span {
-    color: hsl(0, 0%, 60%) !important;
+    color: hsl(200, 19%, 60%) !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
    Webkit-only here (Chrome, Opera, Steam)
    ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
 ::-webkit-scrollbar {
-	background: transparent !important;
+	background-color: transparent !important;
 	height: 12px !important;
 	width: 12px !important;
 }
@@ -452,7 +462,7 @@ form.js-profile-form input.js-cancel-edit-profile,
 	display: none !important;
 }
 ::-webkit-scrollbar-track {
-	background: transparent !important;
+	background-color: transparent !important;
 }
 ::-webkit-scrollbar-track:horizontal {
 	margin-left: 4px !important;
@@ -463,13 +473,13 @@ form.js-profile-form input.js-cancel-edit-profile,
 	margin-bottom: 4px !important;
 }
 ::-webkit-scrollbar-track-piece {
-	background: #050505 !important;
+	background-color: transparent !important;
 	border-radius: 0px !important;
 }
 ::-webkit-scrollbar-thumb {
-	background: #222222 !important;
+	background-color: hsl(200, 19%, 26%) !important;
 	border-radius: 16px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	box-shadow: inset 0 0 6px #777;
+	background-color: hsl(200, 19%, 30%) !important;
 }
