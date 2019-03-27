@@ -202,6 +202,12 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
     border-color: hsl(200, 19%, 30%) !important;
 }
 
+.list-card-edit-title {
+    background-color: hsl(200, 19%, 36%) !important;
+    color: hsl(200, 19%, 90%) !important;
+    border-color: hsl(200, 19%, 30%) !important;
+}
+
 /* -- Layer 5 -- */
 Layer-5,
 .phenom.mod-unread:hover,
